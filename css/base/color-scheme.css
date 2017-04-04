@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+html {
+  color: rgb(213, 208, 206);
+}
+
+body {
+  background-color: rgb(25, 25, 25);
+	background-image: url(../../../img/brillant-dark.png);
+}
+
+nav, footer {
+  background-color: rgba(0,0,0,0.4);
+}
+
+nav li:hover {
+	background-color: rgb(32, 113, 124);
+	text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+a {
+	color: rgb(32, 113, 124);
+	border-bottom: dotted 1px rgb(32, 113, 124);
+}
+
+a:hover {
+	color: rgb(14, 71, 104);
+	border-bottom: dotted 1px rgb(14, 71, 104);
+}
+
+
+/* ==========================================================================
+   General Classes
+   ========================================================================== */
+
+/* Navigation */
+.navigation {
+  background-color: rgb(32, 113, 124);
+}
+
+
+/* Slider-Title */
+.slider-title {
+  color: rgb(235,232,222);
+  background-color: rgb(51, 51, 51);
+}
+
+/* Slider-Description */
+.slider-description {
+  color: rgb (74,70,59);
+  background-color: rgb(235,232,222);
+}
+
+/* Slide-Image */
+.slideshow, .divider {
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+/* Separator */
+.separator {
+  border-bottom: dashed 2px rgb(39, 37, 36);
+}
+
+
+/* ==========================================================================
+   Font Classes
+   ========================================================================== */
+
+.nav-font,
+.title-font,
+.slider-title-font {
+	color: rgb(236, 231, 229);
+}
+
+.subtitle-font,
+.slider-description-font,
+.footer-font,
+.form-font {
+	color: rgb(136, 126, 123);
+}
+
+#sig-AB {
+	color: rgb(10, 126, 123);
+}
+
+#sig-DD {
+	color: rgb(13, 200, 123);
+}
+
+#sig-JM {
+	color: rgb(136, 204, 12);
+}
+
+#sig-JS {
+	color: rgb(136, 126, 15);
+}
+
+#sig-JR {
+	color: rgb(15, 126, 15);
+}
+
+
+/* ==========================================================================
+   Other
+   ========================================================================== */
+
+/* Selection */
+::-moz-selection {
+	background: rgb(95,158,160);
+}
+
+::selection {
+	background: rgb(95,158,160);
+}
+
+
+/* Borders */
+.borders {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* ID: mailForm */
+#mailForm {
+  border: 2px dashed rgb(14, 71, 104);
+}
