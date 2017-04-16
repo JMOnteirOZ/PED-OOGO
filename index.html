@@ -9,6 +9,7 @@
         <!--Metadata-->
         <meta charset="utf-8">
         <meta name="theme-color" content="#ffffff" />
+        <meta name="Robots" ontent="NoIndex, NoFollow" />
         <meta name="revised" content="Joel Monteiro, 02/04/2017" />
         <meta name="keywords" content="HTML, CSS, JS, PHP, BootStrap, XML, Ajax, jQuery" />
         <meta name="author" content="Joel Monteiro, José Ruivo, Diogo Delgado, João Santos, André Brito" />
@@ -47,11 +48,27 @@
 		<nav>
 			<div class="navigation">
 				<ul class="menu nav-font clearfix">
-					<li class="first-level dropdown" onclick="showPerfil()">O Meu Perfil<i class="icon-user"></i></li>
-                        <ul> </ul><!--O meu Perfil-->
+                    
+                    <li class="first-level drop-conta">A Minha Conta <i class="icon-user"></i>
+                        <div class="drop-conta-content">
+                            <div class="arrow"></div>
+                            <a href="#" class="second-level nav-font">Consultar </a>
+                            <a href="#" class="second-level nav-font">Consultar </a>
+                        </div>
+					</li><!--A Minha Conta-->
+
+				<!--	<li class="first-level">Login/Registo<i class="icon-user"></i></li>-->
+
 					<li class="first-level">Contactos<i class="icon-phone"></i></li>
-					<li class="first-level dropdown" onclick="showPedidos()">Pedidos<i class="icon-file"></i></li>
-					    <ul> </ul><!--Pedidos-->
+
+                    <li class="first-level drop-pedido">Pedidos <i class="icon-file"></i>
+                        <div class="drop-pedido-content">
+                            <div class="arrow"></div>
+                            <a href="#" class="second-level nav-font">Consultar Pedidos</a>
+                            <a href="#" class="second-level nav-font">Efectuar Pedido</a>
+                        </div>
+					</li><!--Pedidos-->
+
 					<li class="first-level">Home<i class="icon-home"></i></li>
 				</ul>
 			</div>

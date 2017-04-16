@@ -15,7 +15,7 @@ nav, footer {
   background-color: rgba(0,0,0,0.4);
 }
 
-nav li:hover {
+nav li:hover, nav label:hover {
 	background-color: rgb(32, 113, 124);
 	text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
@@ -40,6 +40,16 @@ a:hover {
   background-color: rgb(32, 113, 124);
 }
 
+/* Dropdown */
+.second-level {
+  background: rgb(32, 113, 124);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.second-level {
+	color: rgb(236, 231, 229);
+}
+
 
 /* Slider-Title */
 .slider-title {
@@ -62,6 +72,68 @@ a:hover {
 /* Separator */
 .separator {
   border-bottom: dashed 2px rgb(39, 37, 36);
+}
+
+/* Login-Registo */
+.formulary {
+  background: rgba(19, 35, 47, 0.9);
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group li a {
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+}
+
+.tab-group li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+
+.tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+.form-title {
+  color: #ffffff;
+}
+
+.form-label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+.form-label.highlight {
+  color: #ffffff;
+}
+
+.form-input {
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+}
+
+.form-input:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+.button {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+.button-contact {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+.button:hover, .button:focus, .button-contact:hover, .button-contact:focus {
+  background: #179b77;
 }
 
 
