@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <title>OoGo - Registo</title>
+        <title>My OoGo</title>
 
         <!--Metadata-->
         <meta charset="utf-8">
@@ -20,19 +20,43 @@
         <link rel="icon" type="image/png" href="assets/icon/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="assets/icon/favicon-16x16.png" sizes="16x16" />
 
+		<!--Styles
+        <link rel="stylesheet" href="css/base/normalize.css" />
+        <link rel="stylesheet" href="css/base/main-scheme.css" />
+        <link rel="stylesheet" href="css/base/font-scheme.css" />
+        <link rel="stylesheet" href="css/base/color-scheme.css" />
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+        <link rel="stylesheet" href="css/vendor/font.css" />
+        <link rel="stylesheet" href="css/vendor/font-icons.css" />
+        -->
+
+
+
 		<!--Styles-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-  		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
-  		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 
-        <link rel="stylesheet" href="css/main-scheme.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
         <link rel="stylesheet" href="css/colors/green.css" id="color-skins" />
+
+        <style>
+            .col-half-offset {
+                margin-left: 3%;
+            }
+
+            @media ((min-width: 768px) and (max-width: 992px) {
+                .col-half-offset {
+                    margin-left: 3%;
+                }
+            }
+        </style>
 
 		<!--Scripts-->
 	</head>
 
     <body>
-        
+
         <!--Header-->
         <header>
             <nav class="navbar navbar-default navbar-alt" role="navigation">
@@ -129,44 +153,43 @@
                 <div class="footer-widgets">
                     <div class="container"> 
                             
-                        <div class="col-md-3 col-sm-6 col-twitter">
-                            <h4>Brevemente!</h4>
-                            <div class="tweet"></div> 
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-6 col-footer">
-                            <div class="subscription">
-                                <h4>Newsletter</h4>
-                                <p>Subscreva para receber noticias!</p> 
-                                
-                                <form action="php/subscribe-mailchimp.php" method="post" id="subscribe-form" role="form">
-                                    <div class="form-validation alert"></div>
-                                    <div class="form-group subscribe-form-input">
-                                        <input type="email" name="email" id="subscribe-form-email" class="footer-subscribe-input" placeholder="Endereço e-mail" autocomplete="off" />      
-                                        <button class="subscribe-form-submit btn-primary-full" data-loading-text="Loading...">Subscrever</button>
-                                    </div>
-                                </form>
-                                
+                            <div class="col-md-3 col-sm-6 col-twitter">
+                                <h4>Brevemente!</h4>
+                                <div class="tweet"></div> 
                             </div>
-                        </div> 
-                        
-                        <div class="col-md-3 col-sm-6 col-footer">
-                            <div class="contact">
-                                <h4>Visite-nos!</h4>
-                                <ul class="contact-details">
-                                    <li><p><i class="icon ion-ios-location-outline highlight"></i> 259 W 95th St(Coords), Lisboa, Portugal</p></li>
-                                    <li><p><i class="icon ion-ios-telephone highlight"></i> +(351) 912 345 678</p></li>
-                                    <li><p><i class="icon ion-android-mail highlight"></i> <a href="oogo@gmail.com">oogo@gmail.com</a></p></li>
-                                </ul>
+                            
+                            <div class="col-md-3 col-sm-6 col-footer">
+                                <div class="subscription">
+                                    <h4>Newsletter</h4>
+                                    <p>Subscreva para receber noticias!</p> 
+                                    
+                                    <form action="php/subscribe-mailchimp.php" method="post" id="subscribe-form" role="form">
+                                        <div class="form-validation alert"></div>
+                                        <div class="form-group subscribe-form-input">
+                                            <input type="email" name="email" id="subscribe-form-email" class="footer-subscribe-input" placeholder="Endereço e-mail" autocomplete="off" />      
+                                            <button class="subscribe-form-submit btn-primary-full" data-loading-text="Loading...">Subscrever</button>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            </div> 
+                            
+                            <div class="col-md-3 col-sm-6 col-footer">
+                                <div class="contact">
+                                    <h4>Visite-nos!</h4>
+                                    <ul class="contact-details">
+                                        <li><p><i class="icon ion-ios-location-outline highlight"></i> 259 W 95th St(Coords), Lisboa, Portugal</p></li>
+                                        <li><p><i class="icon ion-ios-telephone highlight"></i> +(351) 912 345 678</p></li>
+                                        <li><p><i class="icon ion-android-mail highlight"></i> <a href="oogo@gmail.com">oogo@gmail.com</a></p></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-6 col-footer">
-                            <h4><center><b style="color: #1aa99d;">O</b><b style="color: #17ad91;">o</b><b style="color: #27b578;">G</b><b style="color: #28b576;">o</b></center></h4>
-                            <div class="img">
-                                <center><img src="assets/image/oogo_about.png" alt="Oogers" /></center>
+                            
+                            <div class="col-md-3 col-sm-6 col-footer">
+                                <h4><b style="color: #1aa99d;">O</b><b style="color: #17ad91;">o</b><b style="color: #27b578;">G</b><b style="color: #28b576;">o</b></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in euismod nisi.</p>
+                                <p>Cras at ultrices erat, sed vulputate eros. Nunc at augue gravida est fermentum vulputate. Pellentesque et ipsum in dui malesuada tempus. Donec pellentesque.</p>
                             </div>
-                        </div>
                              
                     </div>
                 </div>

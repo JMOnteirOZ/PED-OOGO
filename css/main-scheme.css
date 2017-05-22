@@ -32,17 +32,17 @@ Table of Contents:
 ------------------------------------------------------------------------------*/
 
 /*----- Stylesheets -----*/
-@import "bootstrap.min.css";
-@import "revolution-slider.css";
-@import "owl.carousel.css";
-@import "animate.css";
-@import "cubeportfolio.min.css"; 
+@import "vendor/bootstrap.min.css";
+@import "vendor/revolution-slider.css";
+@import "vendor/owl.carousel.css";
+@import "vendor/animate.css";
+@import "vendor/cubeportfolio.min.css"; 
 
 /*----- Fonts -----*/
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
-@import "simple-line-icons.css";
-@import "ionicons.min.css";
+@import "fonts/simple-line-icons.css";
+@import "fonts/ionicons.min.css";
 
 /*----- General ----*/
 html, 
@@ -3469,4 +3469,17 @@ pre {
 	border: 1px solid #17ad91;
 	background-color: #f0f0f0;
 	color:#1c1c1c;
+}
+
+.col-half-offset {
+    margin-left: 3%;
+}
+
+@media ((min-width: 768px) and (max-width: 992px) {
+    .col-half-offset {
+        margin-left: 3%;
+    }
+}
+video {
+    object-fit: fill;
 }
