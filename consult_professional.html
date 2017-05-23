@@ -28,6 +28,42 @@
         <link rel="stylesheet" href="css/main-scheme.css" type="text/css" />
         <link rel="stylesheet" href="css/colors/green.css" id="color-skins" />
 
+        <style>
+.search[type=text] {
+    width: 75%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('assets/image/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.search[type=text]:focus {
+    width: 100%;
+}
+
+.user {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.pic {
+    background-image: url('http://placehold.it/350x150');
+}
+        </style>
+
+
 		<!--Scripts-->
 	</head>
 
@@ -101,6 +137,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12"> 
+
+                            <div class="blog-post">
+                                <div class="search">
+                                    <form>
+                                        <input class="search" type="text" name="text" placeholder="Search...">
+                                    </form>
+                                </div>
+                            </div>
                             
                             <div class="blog-post">
                                 <h3 class="blog-post-title"><a href="single-post-1.html">Joel Monteiro</a></h3>                            
@@ -109,8 +153,8 @@
                                     <li><a href="#"><i class="ion-chatboxes"></i> 0 Reviews</a></li> 
                                 </ul>                               
                                 <div class="blog-post-date">
-                                    <h2>1</h2>
-                                    <h5>MAI 2017</h5>
+                                    <div class="user pic">
+                                    </div>
                                 </div>
                                 <a href="single-post-1.html"><img class="img-responsive blog-img" src="img/blog/blog-1.jpg" alt=""></a>
                                 <p>Ora Boas! Sou o Joel e sou massagista profissional. Já alguma vez experimentou massagem? Se sim, de certo que gostou. Se não, deveria experimentá-lo plo menos uma vez.<p>

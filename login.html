@@ -75,54 +75,79 @@
             </nav>
         </header>
 
-        <!--Slider-->
-        <section id="home-revolution-slider">
+        <!-- Start Page Top -->  
+        <section id="page-top" style="height:400px">
             <div class="hero">
-                <div class="tp-banner-container">
-                    <div class="tp-banner">
-                        <ul>
-                            <li>
-                                <img src="img/backgrounds/bg-3.jpg" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
-                                
-                                <div class="tp-caption sft"
-                                    data-x="center"
-                                    data-y="260"
-                                    style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                                    <h2 class="home-heading op-3">Registo</h2>
-                                </div>
+            
+                <img src="img/backgrounds/bg-shortcodes.jpg" alt="hero">
 
-                                <div class="tp-caption home-subheading sft"
-                                    data-x="center"
-                                    data-y="360"
-                                    style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                                    <div class="row">
-                                            <form method="post" action=".php" class="signupform" name="signupform" id="signupform">
-                                                <fieldset>
-                                                    <div class="col-md-12 col-sm-12 col-half-offset">
-                                                        <input name="email" type="email" id="email" class="form-control" placeholder="E-Mail" required autofocus/>
-                                                    </div>
-                                                    <div class="col-md-12 col-sm-12 col-half-offset">
-                                                        <input name="password" type="password" id="password" class="form-control" placeholder="Password" required/>
-                                                    </div>
-                                                </fieldset>
-                                                <br>
-                                                <div class="col-md-12 col-sm-12 col-half-offset">
-                                                    <input type="submit" class="btn btn-primary btn-scroll" id="submit" value="Registar" />
-                                                </div>
-                                            </form>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="tp-bannertimer"></div>	
-                    </div>
+                <div class="page-top-title text-center">
+                    <h2 class="white op-1">Registo</h2>
+                    <p class="home-subheading op-1"> Ainda não é um · Ooger · ? </p>
                 </div>
+                
             </div>
         </section>
 
-
         <!--Wrapper-->
         <div class="site-wrapper content">
+
+            <!--Registo-->
+            <section id ="blog" class="parallax-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form method="post" action=".php" class="signupform" name="signupform" id="signupform">
+                                <fieldset>
+                                    <div class="col-md-12 col-sm-12 col-half-offset">
+                                        <input name="nome" type="text" id="nome" class="form-control" placeholder="Nome" required />
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-half-offset">
+                                        <input name="email" type="email" id="email" class="form-control" placeholder="E-Mail" required autofocus />
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-half-offset">
+                                        <input name="password" type="password" id="password" class="form-control" placeholder="Password" required />
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-half-offset">
+                                        <input name="password2" type="password" id="password2" class="form-control" placeholder="Password" required />
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-half-offset">
+                                        <input name="morada" type="text" id="morada" class="form-control" placeholder="Morada" required />
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-half-offset">
+                                        <input name="contacto" type="password" id="contacto" class="form-control" placeholder="Contacto" required />
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-half-offset">
+                                        <!-- <input /> -->
+                                    </div>
+                                    <center>
+                                        PROFISSIONAL ? <input type="checkbox" id="procheck" onclick="showMe('prodiv')">
+                                    </center>
+                                    <div id="prodiv" style="display:none">
+                                        <div class="col-md-12 col-sm-12 col-half-offset">
+                                            <select name="categoria" id="categoria" class="form-control">
+                                                <option></option>
+                                                <option>T1</option>
+                                                <option>T2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-half-offset border">
+                                            <textarea name="descricao" cols="40" rows="3" id="descricao" class="form-control" placeholder="Descricao"></textarea>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-half-offset">
+                                            <!-- <input /> -->
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <br>
+                                <div class="col-md-12 col-sm-12 col-half-offset">
+                                    <input type="submit" class="btn btn-primary btn-scroll" id="submit" value="Registar" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!--Footer-->
             <footer id="footer">
@@ -216,6 +241,20 @@
         <script src="js/plugins/gmap3.min.js"></script>
         <script src="js/plugins/wow.min.js"></script>
         <script src="js/plugins/counterup.min.js"></script> 
-		<script src="js/scripts.js"></script>  
+		<script src="js/scripts.js"></script>
+
+        <script>
+            function showMe(div) {
+                var chkbox = document.getElementById("procheck");
+                var property = "none";
+                if ($('#procheck').is(':checked')) {
+                    property = "block";
+                } else {
+                    property = "none";
+                }
+                document.getElementById(div).style.display = property;
+            };
+        </script>
+
     </body>
 </html>

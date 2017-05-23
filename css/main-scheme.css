@@ -1663,27 +1663,27 @@ blockquote strong {
 }
 .cbp-popup-lightbox .cbp-popup-close {
     opacity: .4;
-    background: url("../img/portfolio/buttons/popup-close-light.png") no-repeat;
+    background: url("../img/assets/popup-close-light.png") no-repeat;
 }
 .cbp-popup-lightbox .cbp-popup-close:hover {
     opacity: 1;
-    background: url("../img/portfolio/buttons/popup-close-light.png") no-repeat;
+    background: url("../img/assets/popup-close-light.png") no-repeat;
 }
 .cbp-popup-lightbox .cbp-popup-prev {
     opacity: .4;
-    background: url("../img/portfolio/buttons/popup-prev-light.png") no-repeat;
+    background: url("../img/assets/popup-prev-light.png") no-repeat;
 }
 .cbp-popup-lightbox .cbp-popup-prev:hover {
     opacity: 1;
-    background: url("../img/portfolio/buttons/popup-prev-light.png") no-repeat;
+    background: url("../img/assets/popup-prev-light.png") no-repeat;
 }
 .cbp-popup-lightbox .cbp-popup-next {
     opacity: .4;
-    background: url("../img/portfolio/buttons/popup-next-light.png") no-repeat;
+    background: url("../img/assets/popup-next-light.png") no-repeat;
 }
 .cbp-popup-lightbox .cbp-popup-next:hover {
     opacity: 1;
-    background: url("../img/portfolio/buttons/popup-next-light.png") no-repeat;
+    background: url("../img/assets/popup-next-light.png") no-repeat;
 }
 
 .cbp-popup-singlePage .cbp-popup-close, 
@@ -1739,17 +1739,6 @@ blockquote strong {
 .project-widget p {
     color: #7a7a7a!important;
 }
-/* 
-.cbp-l-grid-fullScreen {
-    visibility: visible;
-    overflow: visible;
-}
-@media (min-width:992px) {
-    .cbp-l-grid-fullScreen {
-        margin-top: 200px;
-    }
-}
-*/
 
 /*----- Get Connected -----*/
 #get-connected {
@@ -3482,4 +3471,25 @@ pre {
 }
 video {
     object-fit: fill;
+}
+
+/* Search Bar */
+
+.search[type=text] {
+    width: 75%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../assets/image/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.search[type=text]:focus {
+    width: 100%;
 }
