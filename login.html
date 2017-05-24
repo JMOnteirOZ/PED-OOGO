@@ -29,6 +29,13 @@
         <link rel="stylesheet" href="css/colors/green.css" id="color-skins" />
 
 		<!--Scripts-->
+        <style>
+            .rounded-border {
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+</style>
 	</head>
 
     <body>
@@ -56,14 +63,14 @@
                                         <div class="row">
                                             <fieldset>
                                                 <div class="col-md-4 col-sm-4 col-half-offset">
-                                                    <input name="email" type="email" id="email" class="form-control" placeholder="Email" required autofocus />
+                                                    <input name="email" type="email" id="email" class="form-control rounded-border" placeholder="Email" required autofocus />
                                                 </div>
                                                 <div class="col-md-4 col-sm-4 col-half-offset">
-                                                    <input name="password" type="password" id="password" class="form-control" placeholder="Password" required />
+                                                    <input name="password" type="password" id="password" class="form-control rounded-border" placeholder="Password" required />
                                                 </div>
                                             
                                                 <div class="col-md-2 col-sm-2 col-half-offset">
-                                                    <input type="submit" class="btn btn-primary btn-scroll" id="submit" value="Login" />
+                                                    <input type="submit" class="btn btn-primary btn-xs" id="submit" value="Login" />
                                                 </div>
                                             </fieldset>
                                         </div>
@@ -100,22 +107,22 @@
                             <form method="post" action=".php" class="signupform" name="signupform" id="signupform">
                                 <fieldset>
                                     <div class="col-md-12 col-sm-12 col-half-offset">
-                                        <input name="nome" type="text" id="nome" class="form-control" placeholder="Nome" required />
+                                        <input name="nome" type="text" id="nome" class="form-control rounded-border" placeholder="Nome" required />
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-half-offset">
-                                        <input name="email" type="email" id="email" class="form-control" placeholder="E-Mail" required autofocus />
+                                        <input name="email" type="email" id="email" class="form-control rounded-border" placeholder="E-Mail" required autofocus />
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-half-offset">
-                                        <input name="password" type="password" id="password" class="form-control" placeholder="Password" required />
+                                        <input name="password" type="password" id="password" class="form-control rounded-border" placeholder="Password" required />
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-half-offset">
-                                        <input name="password2" type="password" id="password2" class="form-control" placeholder="Password" required />
+                                        <input name="password2" type="password" id="password2" class="form-control rounded-border" placeholder="Password" required />
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-half-offset">
-                                        <input name="morada" type="text" id="morada" class="form-control" placeholder="Morada" required />
+                                        <input name="morada" type="text" id="morada" class="form-control rounded-border" placeholder="Morada" required />
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-half-offset">
-                                        <input name="contacto" type="password" id="contacto" class="form-control" placeholder="Contacto" required />
+                                        <input name="contacto" type="password" id="contacto" class="form-control rounded-border" placeholder="Contacto" required />
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-half-offset">
                                         <!-- <input /> -->
@@ -125,14 +132,14 @@
                                     </center>
                                     <div id="prodiv" style="display:none">
                                         <div class="col-md-12 col-sm-12 col-half-offset">
-                                            <select name="categoria" id="categoria" class="form-control">
-                                                <option></option>
+                                            <select name="categoria" id="categoria" class="form-control rounded-border">
+                                                <option value="" disabled selected hidden>Categoria</option>
                                                 <option>T1</option>
                                                 <option>T2</option>
                                             </select>
                                         </div>
                                         <div class="col-md-12 col-sm-12 col-half-offset border">
-                                            <textarea name="descricao" cols="40" rows="3" id="descricao" class="form-control" placeholder="Descricao"></textarea>
+                                            <textarea name="descricao" cols="40" rows="3" id="descricao" class="form-control rounded-border" placeholder="Descricao"></textarea>
                                         </div>
                                         <div class="col-md-12 col-sm-12 col-half-offset">
                                             <!-- <input /> -->

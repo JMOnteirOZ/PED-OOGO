@@ -129,4 +129,14 @@ footer #social-icons li a:hover,
     border-color: #21b285;
     transition: all 0.4s;
 }
- 
+
+.btn-gold {
+    background: rgba(255,215,0,1);
+}
+.btn-gold:hover {
+    background: rgba(255,215,0,.7);
+}
+
+.gold {
+    color: rgb(255,210,0);
+}
